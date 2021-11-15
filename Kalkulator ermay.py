@@ -3,7 +3,7 @@ import tkinter.font as font
 import math
 
 root = Tk()
-root.title("Kalkulator Ermayy")
+root.title("Kalkulator")
 root["bg"] = "#d1d1d1"
 root.geometry("310x400")
 
@@ -86,31 +86,31 @@ def samadengan():
             e.insert(0,hitung)
         except ZeroDivisionError:
             e.insert(0,"maaf komputer anda kentang")
-            
+
     elif mtk == "perkalian":
         e.insert(0,n_awal * int(nomor_akhir))
     elif mtk == "sisabagi":
         e.insert(0,n_awal % int(nomor_akhir))
-    
 
-btn  = Button(root,text="1",padx = 30,bg="#FF6B6B",fg="white", pady = 20,command=lambda:cetak(1))
-btn2  = Button(root,text="2",padx = 30,bg="#FF6B6B",fg="white", pady = 20,command=lambda:cetak(2))
-btn3  = Button(root,text="3",padx = 30,bg="#FF6B6B",fg="white", pady = 20,command=lambda:cetak(3))
-btn4  = Button(root,text="4",padx = 30,bg="#FF6B6B",fg="white", pady = 20,command=lambda:cetak(4))
-btn5 = Button(root,text="5",padx = 30,bg="#FF6B6B",fg="white", pady = 20,command=lambda:cetak(5))
-btn6  = Button(root,text="6",padx = 30,bg="#FF6B6B",fg="white", pady = 20,command=lambda:cetak(6))
-btn7  = Button(root,text="7",padx = 30,bg="#FF6B6B",fg="white", pady = 20,command=lambda:cetak(7))
-btn8  = Button(root,text="8",padx = 30,bg="#FF6B6B",fg="white", pady = 20,command=lambda:cetak(8))
-btn9  = Button(root,text="9",padx = 30,bg="#FF6B6B",fg="white", pady = 20,command=lambda:cetak(9))
-btn0  = Button(root,text="0",padx = 30,bg="#FF6B6B",fg="white", pady = 20,command=lambda:cetak(0))
-tam = Button(root,text="+",padx = 30,bg="#878787",fg="white", pady = 20,command=tambah)
-kur = Button(root,text="-",padx = 30,bg="#878787",fg="white", pady = 20,command=kurang)
-bag  = Button(root,text="/",padx = 30,bg="#878787",fg="white", pady = 20,command=bagi)
-kal = Button(root,text="x",padx = 30,bg="#878787",fg="white", pady = 20,command=kali)
-pang = Button(root,text="x2",padx = 30,bg="#878787",fg="white", pady = 20,command=pangkat)
-ak2 = Button(root,text="sq2",padx = 25,bg="#878787",fg="white", pady = 20,command=akar)
-sisbag = Button(root,text="%",padx = 30,bg="#878787",fg="white", pady = 20,command=sisabagi)
-hap = Button(root,text="C",padx = 30,bg="#878787",fg="white", pady = 20,command=hapus)
+
+btn  = Button(root,text="1",padx = 30,bg="#3F3351",fg="white", pady = 20,command=lambda:cetak(1))
+btn2  = Button(root,text="2",padx = 30,bg="#3F3351",fg="white", pady = 20,command=lambda:cetak(2))
+btn3  = Button(root,text="3",padx = 30,bg="#3F3351",fg="white", pady = 20,command=lambda:cetak(3))
+btn4  = Button(root,text="4",padx = 30,bg="#3F3351",fg="white", pady = 20,command=lambda:cetak(4))
+btn5 = Button(root,text="5",padx = 30,bg="#3F3351",fg="white", pady = 20,command=lambda:cetak(5))
+btn6  = Button(root,text="6",padx = 30,bg="#3F3351",fg="white", pady = 20,command=lambda:cetak(6))
+btn7  = Button(root,text="7",padx = 30,bg="#3F3351",fg="white", pady = 20,command=lambda:cetak(7))
+btn8  = Button(root,text="8",padx = 30,bg="#3F3351",fg="white", pady = 20,command=lambda:cetak(8))
+btn9  = Button(root,text="9",padx = 30,bg="#3F3351",fg="white", pady = 20,command=lambda:cetak(9))
+btn0  = Button(root,text="0",padx = 30,bg="#3F3351",fg="white", pady = 20,command=lambda:cetak(0))
+tam = Button(root,text="+",padx = 30,bg="#9D84B7",fg="white", pady = 20,command=tambah)
+kur = Button(root,text="-",padx = 30,bg="#9D84B7",fg="white", pady = 20,command=kurang)
+bag  = Button(root,text="/",padx = 30,bg="#9D84B7",fg="white", pady = 20,command=bagi)
+kal = Button(root,text="x",padx = 30,bg="#9D84B7",fg="white", pady = 20,command=kali)
+pang = Button(root,text="^",padx = 30,bg="#9D84B7",fg="white", pady = 20,command=pangkat)
+ak2 = Button(root,text="√",padx = 25,bg="#9D84B7",fg="white", pady = 20,command=akar)
+sisbag = Button(root,text="%",padx = 30,bg="#9D84B7",fg="white", pady = 20,command=sisabagi)
+hap = Button(root,text="C",padx = 30,bg="#9D84B7",fg="white", pady = 20,command=hapus)
 equal = Button(root,text="=",padx = 60,bg="skyblue", pady = 20,command=samadengan)
 
 
